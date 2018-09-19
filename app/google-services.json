@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:915141003206:android:3b3c5a4a4985a166",
         "android_client_info": {
-          "package_name": "com.example.admin.myfirstapp"
+          "package_name": "com.krishnasomu.myfirstapp"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "915141003206-f4sjed553t6o2ogqnp9ufam3qofpeshd.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.admin.myfirstapp",
+            "package_name": "com.krishnasomu.myfirstapp",
             "certificate_hash": "3dff55ae3b87f4cddc1ea0fd899a72c22e3982b8"
           }
         },

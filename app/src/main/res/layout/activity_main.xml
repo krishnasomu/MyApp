@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.admin.myfirstapp.MainActivity">
+    tools:context="com.krishnasomu.myfirstapp.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
 
-    <android.support.design.widget.AppBarLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="61dp">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/chatArea1"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/chatArea2">
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="70dp"
+                android:layout_marginStart="5dp"
+                android:gravity="bottom"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/content_main" />
+        </android.support.constraint.ConstraintLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/chatArea2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/chatArea1">
+
+            <EditText
+                android:id="@+id/editText"
+                style="@android:style/Widget.DeviceDefault.EditText"
+                android:layout_width="346dp"
+                android:layout_height="69dp"
+                android:ems="10"
+                android:hint="type here..."
+                android:inputType="textMultiLine"
+                android:visibility="visible"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="60dp"
+                android:layout_height="69dp"
+                android:ems="10"
+                android:onClick="insertIntoDB"
+                android:text="->"
+                app:layout_constraintBottom_toBottomOf="@+id/editText"
+                app:layout_constraintStart_toEndOf="@+id/editText"
+                tools:layout_width="0dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

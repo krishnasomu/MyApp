@@ -1,4 +1,4 @@
-package com.example.admin.myfirstapp;
+package com.krishnasomu.myfirstapp;
 
 import org.junit.Test;
 

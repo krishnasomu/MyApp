@@ -1,6 +1,4 @@
-package com.example.admin.myfirstapp;
-
-import com.google.firebase.database.IgnoreExtraProperties;
+package com.krishnasomu.myfirstapp;
 
 /**
  * Created by ADMIN on 3/27/2018.
